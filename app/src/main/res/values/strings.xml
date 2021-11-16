@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MVP-LifeCounterApp</string>
+    <string name="initial_life">20</string>
+</resources>

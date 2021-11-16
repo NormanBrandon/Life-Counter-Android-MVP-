@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/fondo">
+
+        <ImageButton
+            android:id="@+id/btnPlus"
+            android:layout_width="107dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:adjustViewBounds="true"
+            android:background="@color/cardview_shadow_end_color"
+            android:padding="20dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/selector_plus"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/btnMinus"
+            android:layout_width="107dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="10dp"
+            android:adjustViewBounds="true"
+            android:background="@color/cardview_shadow_end_color"
+            android:scaleType="fitCenter"
+            android:padding="20dp"
+            android:src="@drawable/selector_minus"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvLifeRotate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:rotation="180"
+            android:text="@string/initial_life"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:textSize="120sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btnMinus"
+            app:layout_constraintStart_toEndOf="@+id/btnPlus"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/fondo2">
+
+        <ImageButton
+            android:id="@+id/btnPlus2"
+            android:layout_width="107dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="10dp"
+            android:adjustViewBounds="true"
+            android:background="@color/cardview_shadow_end_color"
+            android:scaleType="fitCenter"
+            android:padding="20dp"
+            android:src="@drawable/selector_plus"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/btnMinus2"
+            android:layout_width="107dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:adjustViewBounds="true"
+            android:background="@color/cardview_shadow_end_color"
+            android:padding="20dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/selector_minus"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvLifeNormal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/initial_life"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:textSize="120sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btnPlus2"
+            app:layout_constraintStart_toEndOf="@+id/btnMinus2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</LinearLayout>

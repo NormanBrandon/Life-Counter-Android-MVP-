@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:drawable="@drawable/pinclipart_com_subtraction_clip_art_1138924" android:state_pressed="false"/>
+<item android:drawable="@drawable/pinclipart_com_subtraction_clip_art_1138924_neg_removebg_preview" android:state_pressed="true"/>
+</selector>
